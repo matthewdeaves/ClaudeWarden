@@ -11,14 +11,17 @@ Ready-to-use prompting frameworks for Claude Code project development.
 
 ### For Your Projects
 
-To ensure Claude follows these development principles in your project work, add this to your CLAUDE.md file or initial conversation:
+To ensure Claude follows these development principles in your project work, ask Claude to:
 
 ```
-Please always refer to and follow the guiding principles from:
+Please fetch the latest guiding principles from:
 https://raw.githubusercontent.com/matthewdeaves/ClaudeWarden/refs/heads/main/guiding_principals.md
 
+Add the full content to this project's CLAUDE.md file (or update it if it already exists). 
 These principles must be followed at all times during development work on this project.
 ```
+
+This ensures Claude always has the latest principles loaded automatically in every session, rather than just a reference to fetch them.
 
 ### For Reference
 
