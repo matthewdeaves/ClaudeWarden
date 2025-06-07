@@ -1,58 +1,55 @@
-# ClaudeWarden - AI Project Prompts
+# ClaudeWarden - AI Development Frameworks
 
-Ready-to-use prompting frameworks for Claude Code project development.
+Professional-grade prompting frameworks for Claude Code development, available in Diet and Full versions.
 
-## Files
+## Choose Your Version
 
-- **`guiding_principles.md`** - Core development principles and quality standards
-- **`ways_of_working.md`** - Process management, todo tracking, and communication protocols  
-- **`project_starter.md`** - Complete project specification framework with technology recommendations
+### 🍃 Diet ClaudeWarden (~300 tokens)
+**For simple projects and limited usage plans**
+- Essential quality principles
+- Basic todo management
+- Checkpoint communication
+- **[Get Diet Version →](diet/)**
 
-## Usage
+### 🚀 Full ClaudeWarden (~6500 tokens)  
+**For complex projects and unlimited plans**
+- Comprehensive project management
+- Detailed process standards
+- Technology recommendations
+- **[Get Full Version →](full/)**
 
-### Quick Start - Complete Framework Setup (Recommended)
+## Quick Start
 
-**Copy and paste this into any Claude Code conversation:**
+### Diet Version Setup
+```
+Follow these core development principles for all work:
 
+1. No Mock Implementations - Every function must be fully working from day one (test mocks OK)
+2. Strict Architecture - Follow established patterns, don't bridge old/new systems  
+3. Evidence-Based Progress - Provide working code/tests, use TodoWrite for 3+ step tasks
+4. Checkpoint Communication - Ask "Ready to proceed?" before major steps
+5. Quality First - Include error handling, test as you implement, no shortcuts
+```
+
+### Full Version Setup
 ```
 Please fetch and add all ClaudeWarden components to this project's CLAUDE.md file:
 
-1. Development principles: https://raw.githubusercontent.com/matthewdeaves/ClaudeWarden/main/guiding_principles.md
-2. Process standards: https://raw.githubusercontent.com/matthewdeaves/ClaudeWarden/main/ways_of_working.md  
-3. Project starter: https://raw.githubusercontent.com/matthewdeaves/ClaudeWarden/main/project_starter.md
-
-After adding all three, use the project starter framework to help me build [your project description].
+1. Development principles: https://raw.githubusercontent.com/matthewdeaves/ClaudeWarden/main/full/guiding_principles.md
+2. Process standards: https://raw.githubusercontent.com/matthewdeaves/ClaudeWarden/main/full/ways_of_working.md  
+3. Project starter: https://raw.githubusercontent.com/matthewdeaves/ClaudeWarden/main/full/project_starter.md
 ```
 
-**That's it!** This gives Claude everything needed for consistent, high-quality project development.
+## When to Use Which Version
 
-### Individual Component Usage
-
-**For New Projects:**
-```
-Use this project starter framework. I want to build [your project description]
-```
-*Then paste the project_starter.md content*
-
-**For Development Standards:**
-```
-Follow these development principles for all work on this project.
-```
-*Then paste the guiding_principles.md content*
-
-**For Process Management:**
-```
-Use these process standards for todo management and progress tracking.
-```
-*Then paste the ways_of_working.md content*
-
-### Why Use All Three Components Together?
-
-- **`guiding_principles.md`** - Ensures quality code and prevents common development pitfalls
-- **`ways_of_working.md`** - Provides structured progress tracking and clear communication
-- **`project_starter.md`** - Delivers comprehensive project planning and technology recommendations
-
-Together, they create a complete framework for successful project development with Claude Code.
+| Feature | Diet | Full |
+|---------|------|------|
+| Token Usage | ~300 | ~6500 |
+| Simple Tasks | ✅ Perfect | ⚠️ Overkill |
+| Complex Projects | ⚠️ Limited | ✅ Comprehensive |
+| Limited Plans | ✅ Ideal | ❌ Too Heavy |
+| Team Development | ⚠️ Basic | ✅ Complete |
+| Quality Standards | ✅ Core principles | ✅ Full framework |
 
 ## License
 
