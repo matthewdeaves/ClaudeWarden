@@ -4,7 +4,7 @@ Ready-to-use prompting frameworks for Claude Code project development.
 
 ## Files
 
-- **`guiding_principals.md`** - Core development principles to reference during implementation
+- **`guiding_principles.md`** - Core development principles to reference during implementation
 - **`project_starter.md`** - Complete project specification framework with modern open-source technology recommendations, risk assessment, and phased implementation planning
 
 ## Usage
@@ -29,13 +29,13 @@ https://raw.githubusercontent.com/matthewdeaves/ClaudeWarden/refs/heads/main/pro
 Add the full content to this project's CLAUDE.md file so you'll use this framework automatically.
 ```
 
-### For Your Projects
+### For the Guiding Principles
 
 To ensure Claude follows these development principles in your project work, ask Claude to:
 
 ```
 Please fetch the latest guiding principles from:
-https://raw.githubusercontent.com/matthewdeaves/ClaudeWarden/refs/heads/main/guiding_principals.md
+https://raw.githubusercontent.com/matthewdeaves/ClaudeWarden/refs/heads/main/guiding_principles.md
 
 Add the full content to this project's CLAUDE.md file (or update it if it already exists). 
 These principles must be followed at all times during development work on this project.
