@@ -1,5 +1,7 @@
 # Project Architecture & Implementation Framework
 
+**Activation:** When a user says "Use this project starter framework" or "I want to build [project description]", use this comprehensive framework to guide project specification and implementation.
+
 **Quick Start:** Choose your approach and let's build a comprehensive project specification with optimal open-source technology recommendations.
 
 ## Two Options Available
