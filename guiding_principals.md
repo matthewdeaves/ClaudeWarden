@@ -1,0 +1,137 @@
+### **Core Development Principles**
+
+**1. No Mock Implementations - Ever**
+- Every feature you implement must be fully functional from day one
+- Never create placeholder functions, dummy data, or "fake it till you make it" implementations
+- If you cannot implement a feature completely, explicitly state this and propose alternatives
+- All functions must have real logic, proper error handling, and actual data processing
+
+**2. Strict Architectural Adherence**
+- Follow the established architecture patterns without deviation
+- Do not create wrapper functions around legacy code or attempt to "bridge" old and new systems
+- When in doubt about architecture decisions, ask for clarification rather than improvising
+- Maintain consistency in naming conventions, file organization, and design patterns throughout
+
+**3. Incremental, Verifiable Progress**
+- Implement features in small, testable increments
+- Each increment must be demonstrably working before moving to the next
+- Provide clear verification steps for each implementation phase
+- Never claim completion without providing concrete evidence (working code, passing tests, etc.)
+
+### **Communication Standards**
+
+**4. Transparent Status Reporting**
+- Always be explicit about what has been implemented vs. what remains to be done
+- If you encounter limitations or cannot complete a task, state this clearly upfront
+- Provide realistic estimates and highlight any assumptions you're making
+- Use phrases like "I have implemented X, which does Y, but Z still needs to be added"
+
+**5. Evidence-Based Claims**
+- When stating that something is "complete" or "working," provide specific evidence
+- Include code snippets, test results, or step-by-step verification procedures
+- Avoid vague statements like "the system should work" - demonstrate that it does work
+- Document any manual testing steps required to verify functionality
+
+**6. Development Communication Standards**
+- Provide regular status updates with concrete evidence of progress
+- When blocked, explain the specific issue and what you've tried
+- Ask for feedback at logical checkpoints, not just at completion
+- Use precise language: "I have implemented X which does Y" vs "X should work"
+
+### **Technical Implementation Standards**
+
+**7. Comprehensive Error Handling**
+- Every function must include proper exception handling with meaningful error messages
+- Implement logging at appropriate levels (debug, info, warning, error)
+- Provide fallback mechanisms where possible
+- Never let functions fail silently or return misleading success indicators
+
+**8. Testing Requirements**
+- Write unit tests for all core functionality as you implement it
+- Include integration tests for complex workflows
+- Provide clear instructions for running and interpreting test results
+- Aim for high test coverage but focus on meaningful tests over coverage metrics
+
+**9. Documentation Standards**
+- Document all public interfaces with clear docstrings
+- Include usage examples for complex functions
+- Maintain up-to-date README files with setup and usage instructions
+- Document any external dependencies and their installation requirements
+
+**10. Technical Debt Prevention**
+- Refactor as you go - don't accumulate "temporary" solutions
+- Document any technical compromises with improvement plans
+- Ensure all code follows established patterns consistently
+- Regular code reviews against architectural standards
+
+### **Project-Specific Guidelines**
+
+**11. Dual Deployment Compatibility**
+- All code must work in both native host and containerized environments
+- Test environment detection and adaptation logic thoroughly
+- Avoid hardcoded paths or environment-specific assumptions
+- Provide clear setup instructions for both deployment modes
+
+**12. Tool Integration Standards**
+- Implement robust subprocess management for external tools
+- Include proper tool detection and installation verification
+- Handle tool failures gracefully with informative error messages
+- Support all available options for each analysis tool, not just basic functionality
+
+### **Failure Recovery Protocols**
+
+**13. When Things Go Wrong - Recovery Protocols**
+- If you realize you've implemented a mock/placeholder, immediately stop and communicate the issue
+- If architectural decisions conflict with the plan, pause and seek clarification before proceeding
+- If you're unsure about a requirement, ask specific questions rather than making assumptions
+- Document any deviations from the plan with clear reasoning
+
+### **Quality Assurance Checklist**
+
+Before marking any feature as complete, verify:
+- [ ] All code compiles/runs without errors
+- [ ] Unit tests pass and cover the new functionality
+- [ ] Integration tests demonstrate end-to-end functionality
+- [ ] Error handling works as expected
+- [ ] Documentation is complete and accurate
+- [ ] Code follows established patterns and conventions
+- [ ] No mock or placeholder implementations remain
+- [ ] Feature works in both deployment environments (if applicable)
+- [ ] Performance meets established benchmarks
+- [ ] Security considerations have been addressed
+
+### **Continuous Quality Validation**
+- Regular architecture compliance checks
+- Automated quality gates in development workflow
+- Peer review requirements and standards
+- Performance benchmarking and regression testing
+- Security scanning and vulnerability assessment protocols
+
+### **Red Flags - Stop and Reassess**
+
+If you find yourself:
+- Creating functions that return hardcoded or dummy data
+- Wrapping or calling code from previous implementations
+- Making significant architectural changes mid-implementation
+- Unable to provide concrete verification steps
+- Implementing features that "should work" but haven't been tested
+
+**STOP** - Communicate the issue clearly and ask for guidance before proceeding.
+
+### **Success Metrics**
+
+A successful implementation should:
+- Be demonstrably functional through concrete testing
+- Follow the established architecture without compromise
+- Include comprehensive error handling and logging
+- Work reliably in the target deployment environment(s)
+- Be maintainable and extensible for future development
+- Meet all specified requirements without hidden limitations
+- Achieve defined performance benchmarks
+- Pass all security and quality validation checks
+
+---
+
+*Remember: It's better to deliver a smaller, fully functional feature than a larger, partially working one. Quality and reliability trump speed and scope.*
+
+---
