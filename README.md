@@ -5,7 +5,7 @@ Ready-to-use prompting frameworks for Claude Code project development.
 ## Files
 
 - **`guiding_principals.md`** - Core development principles to reference during implementation
-- **`project_starter.md`** - Comprehensive project planning and architecture framework
+- **`project_starter.md`** - Complete project specification framework with modern open-source technology recommendations, risk assessment, and phased implementation planning
 
 ## Usage
 
