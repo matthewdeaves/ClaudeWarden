@@ -8,15 +8,16 @@
 - All production functions must have real logic, proper error handling, and actual data processing
 
 **2. Strict Architectural Adherence**
-- Follow the established architecture patterns without deviation
-- Do not create wrapper functions around legacy code or attempt to "bridge" old and new systems
+- Follow established architecture patterns without deviation (e.g., CakePHP conventions for CakePHP projects, industry best practices for data projects)
+- For new projects, establish clear architectural patterns based on the chosen framework or industry standards early and adhere to them consistently
+- **Do not create wrapper functions around legacy code or attempt to "bridge" old and new systems** - fully upgrade features to use the current architecture instead
 - When in doubt about architecture decisions, ask for clarification rather than improvising
 - Maintain consistency in naming conventions, file organization, and design patterns throughout
 
 **3. Incremental, Verifiable Progress**
 - Implement features in small, testable increments
-- Each increment must be demonstrably working before moving to the next
-- Provide clear verification steps for each implementation phase
+- Each increment must be demonstrably working before moving to the next (proven through passing tests or clear instructions for the user to access and verify the feature)
+- Provide clear verification steps for each implementation phase (show how to access web frontend, CLI commands, or other interfaces)
 - Never claim completion without providing concrete evidence (working code, passing tests, etc.)
 
 ### **Communication Standards**
@@ -61,24 +62,24 @@
 - Document any external dependencies and their installation requirements
 
 **10. Technical Debt Prevention**
-- Refactor as you go - don't accumulate "temporary" solutions
-- Document any technical compromises with improvement plans
+- **Never compromise on quality** - there are no acceptable "temporary" solutions or technical shortcuts
+- Refactor as you go - every piece of code must meet full quality standards from day one
+- If a feature cannot be implemented to full standards within constraints, reduce scope rather than quality
 - Ensure all code follows established patterns consistently
 - Regular code reviews against architectural standards
 
 ### **Project-Specific Guidelines**
 
-**11. Dual Deployment Compatibility**
-- All code must work in both native host and containerized environments
+**11. Deployment Environment Compatibility (if applicable)**
+- All code must work in the target deployment environments specified for the project
 - Test environment detection and adaptation logic thoroughly
 - Avoid hardcoded paths or environment-specific assumptions
-- Provide clear setup instructions for both deployment modes
+- Provide clear setup instructions for all supported deployment modes
 
 **12. Tool Integration Standards**
 - Implement robust subprocess management for external tools
 - Include proper tool detection and installation verification
 - Handle tool failures gracefully with informative error messages
-- Support all available options for each analysis tool, not just basic functionality
 
 ### **Failure Recovery Protocols**
 
@@ -99,7 +100,7 @@ Before marking any feature as complete, verify:
 - [ ] Code follows established patterns and conventions
 - [ ] No mock or placeholder implementations remain
 - [ ] Feature works in both deployment environments (if applicable)
-- [ ] Performance meets established benchmarks
+- [ ] Performance meets established benchmarks (if benchmarks exist, otherways make suggestions to create them)
 - [ ] Security considerations have been addressed
 
 ### **Continuous Quality Validation**
