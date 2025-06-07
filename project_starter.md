@@ -103,6 +103,34 @@ Additional Context: [Any other relevant information]
 
 ---
 
+## Interactive Implementation Protocols
+
+### **Phased Development Management**
+- **Todo List Integration** - Use TodoWrite tool to break implementation into trackable phases
+- **Single Focus Principle** - Only one todo marked "in_progress" at any time
+- **Milestone Communication** - Present progress evidence at 25%, 50%, 75%, and 100% completion
+- **User Decision Gates** - Pause for user input at architectural choice points and feature prioritization
+
+### **Checkpoint Framework**
+- **Phase Start**: Present plan and ask "Ready to proceed with [phase description]?"
+- **Mid-Phase**: Show working code/tests and ask for feedback on direction
+- **Phase Complete**: Demonstrate functionality and ask "Ready to move to [next phase]?"
+- **Architectural Decisions**: Always ask user preference when multiple valid approaches exist
+
+### **Evidence Requirements**
+- **Working Code**: Functional demonstrations, not placeholders
+- **Test Results**: Passing tests or clear manual verification steps
+- **User Verification**: "Please test [specific feature] and confirm it works as expected"
+- **Documentation**: Clear instructions for accessing and verifying each completed feature
+
+### **Communication Standards**
+- **Status Updates**: "Completed [X], currently working on [Y], next will be [Z]"
+- **Blocking Issues**: "Cannot proceed with [X] because [specific issue]. Suggest [alternatives]"
+- **Clarification Requests**: "Two approaches possible for [X]: [Option A] vs [Option B]. Which do you prefer?"
+- **Completion Verification**: "Feature [X] is complete. Test by [specific steps]. Ready for next phase?"
+
+---
+
 ## Quality Assurance Framework
 
 Every project specification includes:

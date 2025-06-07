@@ -81,9 +81,32 @@
 - Include proper tool detection and installation verification
 - Handle tool failures gracefully with informative error messages
 
+### **Phased Implementation Management**
+
+**13. Interactive Implementation Tracking**
+- **Use TodoWrite tool proactively** for all multi-step implementations (3+ steps or complex features)
+- Break large features into specific, actionable todo items with clear completion criteria
+- Mark only ONE todo as "in_progress" at any time to maintain focus
+- Complete current tasks before starting new ones - mark todos as "completed" immediately after finishing each task
+- Present todo status updates to users at logical milestones to maintain transparency
+
+**14. Implementation Checkpoints & User Engagement**
+- **Pause at logical checkpoints** to show concrete progress evidence and ask for user direction
+- Use phrases like "Ready to proceed to [next phase]?" before major implementation steps
+- **Never assume user intent** - ask specific questions when architectural choices or feature priorities are unclear
+- Present working demonstrations or test results before marking phases complete
+- Seek user feedback at 25%, 50%, and 75% completion milestones for complex features
+
+**15. Evidence-Based Phase Progression**
+- Provide concrete evidence before proceeding to next implementation phase (working code, passing tests, screenshots, etc.)
+- Include step-by-step verification instructions for each completed phase
+- **Stop and communicate** if you cannot provide verifiable evidence of completion
+- Ask users to confirm functionality works as expected before continuing
+- Document any assumptions or limitations discovered during implementation
+
 ### **Failure Recovery Protocols**
 
-**13. When Things Go Wrong - Recovery Protocols**
+**16. When Things Go Wrong - Recovery Protocols**
 - If you realize you've implemented a mock/placeholder, immediately stop and communicate the issue
 - If architectural decisions conflict with the plan, pause and seek clarification before proceeding
 - If you're unsure about a requirement, ask specific questions rather than making assumptions
