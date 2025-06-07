@@ -9,6 +9,26 @@ Ready-to-use prompting frameworks for Claude Code project development.
 
 ## Usage
 
+### Using the Project Starter
+
+**Step 1:** Copy the project starter content from:
+```
+https://raw.githubusercontent.com/matthewdeaves/ClaudeWarden/refs/heads/main/project_starter.md
+```
+
+**Step 2:** Paste it into a new Claude Code conversation and say:
+```
+Use this project starter framework. I want to build [your project description]
+```
+
+**Alternative:** Ask Claude to fetch and embed it permanently:
+```
+Please fetch the project starter from:
+https://raw.githubusercontent.com/matthewdeaves/ClaudeWarden/refs/heads/main/project_starter.md
+
+Add the full content to this project's CLAUDE.md file so you'll use this framework automatically.
+```
+
 ### For Your Projects
 
 To ensure Claude follows these development principles in your project work, ask Claude to:
