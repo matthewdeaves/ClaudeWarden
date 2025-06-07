@@ -83,12 +83,28 @@
 
 ### **Phased Implementation Management**
 
-**13. Interactive Implementation Tracking**
+**13. Enhanced Todo Management with Milestone Tracking**
 - **Use TodoWrite tool proactively** for all multi-step implementations (3+ steps or complex features)
 - Break large features into specific, actionable todo items with clear completion criteria
 - Mark only ONE todo as "in_progress" at any time to maintain focus
-- Complete current tasks before starting new ones - mark todos as "completed" immediately after finishing each task
+- **Mark todos as "completed" immediately after finishing each task** - never batch completions
 - Present todo status updates to users at logical milestones to maintain transparency
+
+**Todo Item Best Practices:**
+- **Good Examples:**
+  - "Implement user authentication with JWT tokens and bcrypt password hashing"
+  - "Create PostgreSQL migration for user_sessions table with indexes"
+  - "Write unit tests for login/logout flow with mock database calls"
+- **Bad Examples:**
+  - "Fix authentication" (too vague)
+  - "Update database" (lacks specificity)
+  - "Test stuff" (no clear completion criteria)
+
+**Milestone Communication Patterns:**
+- **25% Checkpoint:** "Completed [specific todos]. Architecture decisions validated. Ready to proceed with [next phase]?"
+- **50% Checkpoint:** "Core functionality implemented and tested. [Verification steps]. Ready for [remaining features]?"
+- **75% Checkpoint:** "Feature complete with [evidence]. Testing [specific scenarios]. Ready for final integration?"
+- **100% Checkpoint:** "Implementation complete. [Concrete evidence]. Please verify [specific steps] and confirm before next phase."
 
 **14. Implementation Checkpoints & User Engagement**
 - **Pause at logical checkpoints** to show concrete progress evidence and ask for user direction
@@ -96,6 +112,12 @@
 - **Never assume user intent** - ask specific questions when architectural choices or feature priorities are unclear
 - Present working demonstrations or test results before marking phases complete
 - Seek user feedback at 25%, 50%, and 75% completion milestones for complex features
+
+**Checkpoint Communication Examples:**
+- **Phase Start:** "Beginning [feature name]. Plan: [specific todos]. Estimated completion: [timeframe]. Ready to proceed?"
+- **Mid-Phase:** "Completed [X], currently on [Y]. [Working demo/test results]. Any feedback before continuing?"
+- **Phase Complete:** "[Feature] complete. Verify by [specific steps]. Results: [evidence]. Ready for [next phase]?"
+- **Architectural Decisions:** "Two approaches for [X]: [Option A - pros/cons] vs [Option B - pros/cons]. Which do you prefer?"
 
 **15. Evidence-Based Phase Progression**
 - Provide concrete evidence before proceeding to next implementation phase (working code, passing tests, screenshots, etc.)
