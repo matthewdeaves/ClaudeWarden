@@ -1,10 +1,11 @@
 ### **Core Development Principles**
 
-**1. No Mock Implementations - Ever**
+**1. No Mock Implementations in Production Code**
 - Every feature you implement must be fully functional from day one
-- Never create placeholder functions, dummy data, or "fake it till you make it" implementations
+- Never create placeholder functions, dummy data, or "fake it till you make it" implementations in production code
+- **Exception: Test mocks are encouraged** - Use mocks, stubs, and test doubles freely in your test suite to isolate units under test and mock external dependencies
 - If you cannot implement a feature completely, explicitly state this and propose alternatives
-- All functions must have real logic, proper error handling, and actual data processing
+- All production functions must have real logic, proper error handling, and actual data processing
 
 **2. Strict Architectural Adherence**
 - Follow the established architecture patterns without deviation
@@ -48,7 +49,8 @@
 
 **8. Testing Requirements**
 - Write unit tests for all core functionality as you implement it
-- Include integration tests for complex workflows
+- **Use mocks liberally in tests** to isolate the code under test from external dependencies, databases, APIs, file systems, etc.
+- Include integration tests for complex workflows (these may use fewer mocks to test real interactions)
 - Provide clear instructions for running and interpreting test results
 - Aim for high test coverage but focus on meaningful tests over coverage metrics
 
