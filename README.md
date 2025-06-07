@@ -1,4 +1,4 @@
-# AI Project Prompts
+# ClaudeWarden - AI Project Prompts
 
 Ready-to-use prompting frameworks for Claude Code project development.
 
