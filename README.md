@@ -4,48 +4,55 @@ Ready-to-use prompting frameworks for Claude Code project development.
 
 ## Files
 
-- **`guiding_principles.md`** - Core development principles to reference during implementation
-- **`project_starter.md`** - Complete project specification framework with modern open-source technology recommendations, risk assessment, and phased implementation planning
+- **`guiding_principles.md`** - Core development principles and quality standards
+- **`ways_of_working.md`** - Process management, todo tracking, and communication protocols  
+- **`project_starter.md`** - Complete project specification framework with technology recommendations
 
 ## Usage
 
-### Using the Project Starter
+### Quick Start - Complete Framework Setup (Recommended)
 
-**Step 1:** Copy the project starter content from:
+**Copy and paste this into any Claude Code conversation:**
+
 ```
-https://raw.githubusercontent.com/matthewdeaves/ClaudeWarden/refs/heads/main/project_starter.md
+Please fetch and add all ClaudeWarden components to this project's CLAUDE.md file:
+
+1. Development principles: https://raw.githubusercontent.com/matthewdeaves/ClaudeWarden/main/guiding_principles.md
+2. Process standards: https://raw.githubusercontent.com/matthewdeaves/ClaudeWarden/main/ways_of_working.md  
+3. Project starter: https://raw.githubusercontent.com/matthewdeaves/ClaudeWarden/main/project_starter.md
+
+After adding all three, use the project starter framework to help me build [your project description].
 ```
 
-**Step 2:** Paste it into a new Claude Code conversation and say:
+**That's it!** This gives Claude everything needed for consistent, high-quality project development.
+
+### Individual Component Usage
+
+**For New Projects:**
 ```
 Use this project starter framework. I want to build [your project description]
 ```
+*Then paste the project_starter.md content*
 
-**Alternative:** Ask Claude to fetch and embed it permanently:
+**For Development Standards:**
 ```
-Please fetch the project starter from:
-https://raw.githubusercontent.com/matthewdeaves/ClaudeWarden/refs/heads/main/project_starter.md
-
-Add the full content to this project's CLAUDE.md file so you'll use this framework automatically.
+Follow these development principles for all work on this project.
 ```
+*Then paste the guiding_principles.md content*
 
-### For the Guiding Principles
-
-To ensure Claude follows these development principles in your project work, ask Claude to:
-
+**For Process Management:**
 ```
-Please fetch the latest guiding principles from:
-https://raw.githubusercontent.com/matthewdeaves/ClaudeWarden/refs/heads/main/guiding_principles.md
-
-Add the full content to this project's CLAUDE.md file (or update it if it already exists). 
-These principles must be followed at all times during development work on this project.
+Use these process standards for todo management and progress tracking.
 ```
+*Then paste the ways_of_working.md content*
 
-This ensures Claude always has the latest principles loaded automatically in every session, rather than just a reference to fetch them.
+### Why Use All Three Components Together?
 
-### For Reference
+- **`guiding_principles.md`** - Ensures quality code and prevents common development pitfalls
+- **`ways_of_working.md`** - Provides structured progress tracking and clear communication
+- **`project_starter.md`** - Delivers comprehensive project planning and technology recommendations
 
-You can also copy the relevant content from the files directly into your Claude Code conversations to improve project outcomes and prevent common development pitfalls.
+Together, they create a complete framework for successful project development with Claude Code.
 
 ## License
 
