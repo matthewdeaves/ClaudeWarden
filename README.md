@@ -22,13 +22,11 @@ Professional-grade prompting frameworks for Claude Code development, available i
 
 ### Diet Version Setup
 ```
-Follow these core development principles for all work:
+Please fetch and add Diet ClaudeWarden to this project's CLAUDE.md file:
 
-1. No Mock Implementations - Every function must be fully working from day one (test mocks OK)
-2. Strict Architecture - Follow established patterns, don't bridge old/new systems  
-3. Evidence-Based Progress - Provide working code/tests, use TodoWrite for 3+ step tasks
-4. Checkpoint Communication - Ask "Ready to proceed?" before major steps
-5. Quality First - Include error handling, test as you implement, no shortcuts
+https://raw.githubusercontent.com/matthewdeaves/ClaudeWarden/main/diet/core_principles.md
+
+Then follow these core development principles for all work.
 ```
 
 ### Full Version Setup
