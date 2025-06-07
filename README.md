@@ -46,3 +46,7 @@ This ensures Claude always has the latest principles loaded automatically in eve
 ### For Reference
 
 You can also copy the relevant content from the files directly into your Claude Code conversations to improve project outcomes and prevent common development pitfalls.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. You are free to use, modify, and distribute this content for any purpose.
