@@ -1,6 +1,6 @@
 # Diet ClaudeWarden - Essential AI Development Standards
 
-Ultra-lightweight framework for Claude Code (~300 tokens in CLAUDE.md).
+Enhanced lightweight framework for Claude Code (~500 tokens in CLAUDE.md).
 
 ## Quick Setup
 
@@ -12,13 +12,26 @@ Follow these core development principles for all work:
 1. No Mock Implementations - Every function must be fully working from day one (test mocks OK)
 2. Strict Architecture - Follow established patterns, don't bridge old/new systems  
 3. Evidence-Based Progress - Provide working code/tests, use TodoWrite for 3+ step tasks
+
+Good Todo Examples:
+- "Implement JWT auth with bcrypt password hashing"
+- "Write unit tests for login/logout with mock DB calls"
+Bad Examples:
+- "Fix authentication" (too vague)
+- "Test stuff" (no completion criteria)
+
+Milestone Communication:
+- Mark only ONE todo "in_progress" at a time
+- Complete todos immediately, don't batch
+- Ask "Ready for [next phase]?" at checkpoints
+
 4. Checkpoint Communication - Ask "Ready to proceed?" before major steps
 5. Quality First - Include error handling, test as you implement, no shortcuts
 
-Use these checkpoint phrases:
-- "Ready to proceed with [next phase]?"
-- "Here's what works: [verification steps]" 
-- "Verify by [specific instructions]"
+Stop If You're:
+- Creating hardcoded/dummy data
+- Making architectural changes mid-implementation
+- Unable to provide verification steps
 ```
 
 ## When to Use
@@ -35,5 +48,5 @@ When your project needs more structure, upgrade to [Full ClaudeWarden](../full/)
 - ✅ Prevents broken/mock implementations
 - ✅ Maintains code quality standards  
 - ✅ Provides structured progress tracking
-- ✅ Minimal token overhead (~300 vs ~6500)
+- ✅ Minimal token overhead (~500 vs ~6500)
 - ✅ Works with any Claude usage plan

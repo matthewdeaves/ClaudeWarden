@@ -4,11 +4,11 @@ Professional-grade prompting frameworks for Claude Code development, available i
 
 ## Choose Your Version
 
-### 🍃 Diet ClaudeWarden (~300 tokens)
+### 🍃 Diet ClaudeWarden (~500 tokens)
 **For simple projects and limited usage plans**
 - Essential quality principles
-- Basic todo management
-- Checkpoint communication
+- Todo quality examples and milestone tracking
+- Checkpoint communication and red flags
 - **[Get Diet Version →](diet/)**
 
 ### 🚀 Full ClaudeWarden (~6500 tokens)  
@@ -44,7 +44,7 @@ Please fetch and add all ClaudeWarden components to this project's CLAUDE.md fil
 
 | Feature | Diet | Full |
 |---------|------|------|
-| Token Usage | ~300 | ~6500 |
+| Token Usage | ~500 | ~6500 |
 | Simple Tasks | ✅ Perfect | ⚠️ Overkill |
 | Complex Projects | ⚠️ Limited | ✅ Comprehensive |
 | Limited Plans | ✅ Ideal | ❌ Too Heavy |
