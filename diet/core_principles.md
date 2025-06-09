@@ -41,3 +41,4 @@
 - Creating hardcoded/dummy data
 - Making architectural changes mid-implementation
 - Unable to provide verification steps
+- Guessing API names/functions instead of checking docs
