@@ -34,6 +34,13 @@
 - Avoid vague statements like "the system should work" - demonstrate that it does work
 - Document any manual testing steps required to verify functionality
 
+**API/Protocol Accuracy**
+- When working with documented APIs, protocols, or frameworks, NEVER guess function names, constants, or parameter names
+- Always verify exact names, signatures, and usage patterns against official documentation
+- If documentation is available but unclear, state "checking documentation for exact API signature" and reference specific sources
+- Use placeholder comments like `// TODO: verify exact function name from OpenTransport docs` rather than guessing
+- When uncertain about API details, ask for specific documentation sections or examples
+
 **6. Development Communication Standards**
 - Provide regular status updates with concrete evidence of progress
 - When blocked, explain the specific issue and what you've tried
