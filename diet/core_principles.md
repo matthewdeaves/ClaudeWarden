@@ -37,8 +37,21 @@
 - Test as you implement
 - No temporary solutions or shortcuts
 
+**6. Surgical Refactoring Strategy**
+- **No dual systems** - avoid compatibility layers that create permanent technical debt
+- **Complete transformation** - pick smallest isolated piece and replace it entirely
+- **Controlled breaking changes** - let compiler find ALL usage sites, fix them all at once
+- **One system only** - no "legacy" vs "new" coexistence, no conversion code everywhere
+
+**Refactoring Anti-Patterns:**
+- Bridge functions between old/new systems
+- Compatibility shims or wrapper layers  
+- #define aliases to "ease transition"
+- Keeping both old and new APIs "temporarily"
+
 **Stop If You're:**
 - Creating hardcoded/dummy data
 - Making architectural changes mid-implementation
 - Unable to provide verification steps
 - Guessing API names/functions instead of checking docs
+- Adding compatibility layers instead of complete replacement

@@ -105,6 +105,78 @@
 - Present working demonstrations or test results before marking phases complete
 - Seek user feedback at 25%, 50%, and 75% completion milestones for complex features
 
+## Surgical Refactoring Workflow
+
+### **Refactoring Strategy: Complete Transformation vs. Compatibility**
+
+**Core Principle**: Avoid dual systems by making surgical, complete transformations of small isolated pieces rather than additive compatibility approaches.
+
+### **The Dual System Problem**
+Traditional incremental refactoring creates permanent messes:
+- Legacy MacTCP types AND new generic types (forever)
+- Old callback system AND new callback system (forever) 
+- Conversion code everywhere making everything slower and buggier
+- #defines and typedefs creating confusion about which system to use
+- The "legacy" system never gets removed because it's "too much work"
+
+### **Surgical Refactoring Process**
+
+**Step 1: Target Isolation**
+- Pick the **smallest isolated piece** that can be transformed completely
+- Examples: single struct definition, single function signature, single enum
+- NOT: entire subsystem, multiple related components, or cross-cutting concerns
+
+**Step 2: Controlled Breaking Changes**
+- Change the definition directly (no compatibility layer)
+- Let compiler find ALL usage sites automatically
+- Fix ALL compile errors in one operation
+- Test that it works end-to-end
+- Commit the complete transformation
+
+**Step 3: Verification & Next Target**
+- Verify the transformation is complete (no old system remains)
+- Identify next smallest isolated piece
+- Repeat process
+
+### **Todo Patterns for Refactoring Work**
+
+**Good Refactoring Todos:**
+- "Replace NetworkTCPInfo struct fields with generic types, fix all 6 usage sites"
+- "Change AddressToString function signature, update 3 call sites"
+- "Convert error enum from MacTCP codes to generic codes, fix all references"
+
+**Bad Refactoring Todos:**
+- "Add compatibility layer for network types" (creates dual system)
+- "Gradually migrate to new API" (no forcing function)
+- "Refactor networking layer" (too broad, no clear completion)
+
+### **Checkpoint Communication for Breaking Changes**
+
+**Before Starting:**
+- "Planning to replace [specific component] completely. This will break compilation in [N files]. Ready to proceed?"
+
+**During Work:**
+- "Changed [component] definition. Fixing compile errors in [file1, file2, file3]..."
+
+**Completion:**
+- "Transformation complete. Old [component] system eliminated. Test by [specific steps]. Ready for next target?"
+
+### **Evidence Requirements for Complete Transformations**
+
+**Required Evidence:**
+- All compile errors fixed
+- No compatibility/conversion code remains
+- No #define aliases or bridge functions
+- Original system completely eliminated
+- End-to-end functionality verified
+
+**Red Flags - Stop and Reassess:**
+- Creating compatibility shims or wrapper layers
+- Maintaining both old and new APIs "temporarily"
+- Adding conversion functions between old/new types
+- Using #define aliases to "ease transition"
+- Planning to "remove legacy system later"
+
 ---
 
 *These standards ensure consistent, transparent communication and reliable progress tracking throughout project implementation.*

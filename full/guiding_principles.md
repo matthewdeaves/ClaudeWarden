@@ -14,6 +14,15 @@
 - When in doubt about architecture decisions, ask for clarification rather than improvising
 - Maintain consistency in naming conventions, file organization, and design patterns throughout
 
+**2a. Surgical Refactoring & Legacy System Transformation**
+- **Avoid dual systems at all costs** - compatibility layers create permanent technical debt that never gets removed
+- **Use controlled breaking changes** - pick the smallest isolated component and replace it completely in one operation
+- **Let the compiler be your forcing function** - make changes that require fixing ALL usage sites immediately
+- **Complete transformation, not incremental compatibility** - eliminate old system entirely, don't maintain both
+- **Target isolation strategy** - identify self-contained pieces (single struct, single function, single enum) for complete replacement
+- **No bridge code** - avoid #define aliases, conversion functions, or wrapper layers that create permanent maintenance burden
+- **One-shot replacement** - change the definition, fix all compile errors in one response, test that it works, commit
+
 **3. Incremental, Verifiable Progress**
 - Implement features in small, testable increments
 - Each increment must be demonstrably working before moving to the next (proven through passing tests or clear instructions for the user to access and verify the feature)
