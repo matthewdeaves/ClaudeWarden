@@ -15,39 +15,21 @@
 - Never claim "complete" without proof
 - Use TodoWrite for 3+ step tasks
 
-**Good Todo Examples:**
-- "Implement JWT auth with bcrypt password hashing"
-- "Write unit tests for login/logout with mock DB calls"
-**Bad Examples:**
-- "Fix authentication" (too vague)
-- "Test stuff" (no completion criteria)
-
-**Milestone Communication:**
+**4. Todo Management**
 - Mark only ONE todo "in_progress" at a time
 - Complete todos immediately, don't batch
 - Ask "Ready for [next phase]?" at checkpoints
-
-**4. Checkpoint Communication**
-- "Ready to proceed with [next phase]?" 
-- "Here's what works: [verification steps]"
-- "Verify by [specific instructions]"
 
 **5. Quality First**
 - Include error handling and logging
 - Test as you implement
 - No temporary solutions or shortcuts
 
-**6. Surgical Refactoring Strategy**
-- **No dual systems** - avoid compatibility layers that create permanent technical debt
-- **Complete transformation** - pick smallest isolated piece and replace it entirely
-- **Controlled breaking changes** - let compiler find ALL usage sites, fix them all at once
-- **One system only** - no "legacy" vs "new" coexistence, no conversion code everywhere
-
-**Refactoring Anti-Patterns:**
-- Bridge functions between old/new systems
-- Compatibility shims or wrapper layers  
-- #define aliases to "ease transition"
-- Keeping both old and new APIs "temporarily"
+**6. Surgical Refactoring**
+- **No dual systems** - avoid compatibility layers
+- **Complete transformation** - replace smallest isolated piece entirely
+- **Controlled breaking changes** - let compiler find ALL usage sites
+- **One system only** - no "legacy" vs "new" coexistence
 
 **Stop If You're:**
 - Creating hardcoded/dummy data
